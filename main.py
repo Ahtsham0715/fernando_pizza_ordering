@@ -58,8 +58,16 @@ def getCheckboxValue():
 
 # this is the function called when the button is clicked
 def orderfunc():
-    messagebox.showinfo('Success','ordered Successfully!')
-	# print('clicked')
+	if (messagebox.askyesno('Success','ordered Successfully!\nDo you want to order again?')):
+		CheeseVariable.set(0)
+		gpVariable.set(0)
+		OnionVariable.set(0)
+		PepperoniVariable.set(0)
+		SausagesVariable.set(0)
+		SmallVariable.set(0)
+		MushroomsVariable.set(0)
+		LargeVariable.set(0)
+		MediumVariable.set(0)
 
 
 
